@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #e9ecf4;
+  color: #000;
+  font-family: sans-serif;
+}
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+.contenedor > div,
+.contenedor .header,
+.contenedor .aside,
+.contenedor .footer,
+.contenedor .contenido {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+.contenedor .header {
+  background: #12203e;
+  color: #eee;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.contenedor .contenido {
+  grid-column: span 2;
+}
+.contenedor .aside {
+  grid-column: 3 / 4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #faa43d;
+  grid-row: span 2;
+  min-height: 100px;
+}
+.contenedor .widget-1,
+.contenedor .widget-2 {
+  background: #55a8fd;
+  color: #eee;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor .footer {
+  background: #12203e;
+  color: #eee;
+  grid-column: span 3;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor .contenido {
+    /* Empiza en la columna 1 y termina en la ultima columna que vendria siendo -1 */
+    grid-column: 1 / -1;
+  }
+  .contenedor .aside {
+    grid-column: 1 / -1;
+  }
+  .contenedor .widget-1 {
+    grid-column: 1 / 3;
+  }
+}

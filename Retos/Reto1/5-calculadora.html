@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/paginacion.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+        <header>
+            <center class="titulo">
+                <h1>Calculadora</h1>
+            </center>
+        </header>
+        <ul class="navegar">
+            <li><a href="index.html">Reto1</a></li>
+            <li><a href="1-ClienteServidor.html" class="active">Reto2</a></li>
+            <li><a href="2-ListarServidores.html">Reto3</a></li>
+            <li><a href="3-youtube.html">Reto4</a></li>
+            <li><a href="4-reproductor.html">Reto5</a></li>
+            <li><a href="5-calculadora.html">Reto6</a></li>
+        </ul>
+    <form class="calculator" name="calculator">
+        <h3>Calculadora </h3>
+        <p>Haz algun calculo para ver el resultado.</p>
+        <input type="textfield" name="ans" style="background: whitesmoke;" value="">
+        <br>
+        <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+        <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+        <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+        <input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+        <br>
+        <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+        <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+        <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+        <input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+        <br>
+        <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+        <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+        <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+        <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+        <br>
+        <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+        <input type="reset" value="c">
+        <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+        <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+        <h3>Calculadora Casio</h3>
+    </form>
+        <footer>David Santiago Vargas Coronado 2022</footer>
+
+</body>
+
+</html>
